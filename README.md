@@ -3,6 +3,8 @@
 > **智锐科创协会 (SCU Covariant) 出品**  
 > 专为计算机初学者、自学者与科研新秀打造的交互式通关指南。涵盖开发工具箱（Git/Linux/VS Code/Docker）、核心编程语言（C/C++/Python/数学基石）、学术科研启蒙（Zotero/LaTeX/论文复现/大创）、计算机专业四大件（数据结构/计组/操作系统/网络）、工业界工程赛道（Web/后端/深度学习/大模型LLM/嵌入式）与精选优质免费自学视频/文档外链。
 
+🌐 **在线网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
+
 ![GitHub Pages Compatible](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
