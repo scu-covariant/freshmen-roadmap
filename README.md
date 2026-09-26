@@ -3,6 +3,9 @@
 > **用最优秀的理论，做最出色的工程。**
 > —— 四川大学智锐科创计算机协会 (SCU Covariant) 出品
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)
+[![SCU Covariant](https://img.shields.io/badge/SCU-Covariant-108fcc.svg)](https://unicov.cn/scu/)
+
 🌐 **路线图在线交互网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
 
 ---
@@ -88,3 +91,14 @@
 - 📚 **历史沉淀指导**：[CSGuidance 仓库](https://github.com/scu-covariant/CSGuidance)
 
 欢迎大家提出宝贵建议或提交 PR 推荐优质学习资源！
+
+---
+
+## 📄 开源许可证与版权声明 (License)
+
+本项目文档与路线图学习资料采用 **[CC BY-NC-SA 4.0 (知识共享 署名-非商业性使用-相同方式共享 4.0 国际许可协议)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)** 进行许可。
+
+- **署名 (Attribution / BY)**：在任何媒介中引用或转载时，须完整保留 **四川大学智锐科创计算机协会 (SCU Covariant)** 的版权与署名信息，并提供指向本项目的链接。
+- **非商业性使用 (NonCommercial / NC)**：严禁将本项目、衍生内容或所整理的路线图用于任何形式的商业盈利目的（包括但不限于付费打包、商业课件捆绑、付费社群导流或课程转售等）。
+- **相同方式共享 (ShareAlike / SA)**：若您在二次创作中修改或衍生了本路线图，须依照相同或兼容的许可协议继续公开发布。
+

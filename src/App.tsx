@@ -186,9 +186,23 @@ export function App() {
         <div className="flex items-center justify-center gap-1 text-slate-500 font-medium">
           <span>用最优秀的理论，做最出色的工程</span>
         </div>
-        <p className="text-[11px] text-slate-400">
-          所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档，若有侵权请联系删除。本站仅为学习交流使用，禁止用于商业用途。
+        <p className="text-[11px] text-slate-400 max-w-xl mx-auto px-4">
+          所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档，若有侵权请联系删除。本站仅为自学交流使用。
         </p>
+        <div className="flex flex-wrap items-center justify-center gap-2 text-[11px] text-slate-400 pt-1">
+          <span>内容协议：</span>
+          <a
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-600 hover:text-sky-600 font-medium underline underline-offset-2 transition-colors inline-flex items-center gap-0.5"
+          >
+            <span>CC BY-NC-SA 4.0 国际许可</span>
+            <span>↗</span>
+          </a>
+          <span>·</span>
+          <span>© 2026 四川大学智锐科创计算机协会 (SCU Covariant)</span>
+        </div>
       </footer>
     </div>
   );
