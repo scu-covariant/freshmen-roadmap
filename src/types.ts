@@ -1,4 +1,4 @@
-export type NodeType = 'tools' | 'language' | 'cs-core' | 'direction' | 'growth';
+export type NodeType = 'tools' | 'language' | 'cs-core' | 'direction' | 'research' | 'growth';
 export type ResourceType = 'video' | 'doc' | 'interactive' | 'book' | 'tool';
 export type NodeStatus = 'not_started' | 'in_progress' | 'completed';
 
@@ -50,3 +50,4 @@ export interface RoadmapStage {
     gradient: string;
   };
 }
+

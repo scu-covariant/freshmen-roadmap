@@ -17,6 +17,10 @@ import {
   Trophy,
   GraduationCap,
   CircleDot,
+  Microscope,
+  FileText,
+  Library,
+  FlaskConical,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -38,6 +42,10 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Trophy,
   GraduationCap,
   CircleDot,
+  Microscope,
+  FileText,
+  Library,
+  FlaskConical,
 };
 
 interface IconRendererProps {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { RoadmapNode, NodeStatus, NodeType } from '../types';
 import { NodeCard } from './NodeCard';
-import { Terminal, Cpu, Binary, Layout, Trophy } from 'lucide-react';
+import { Terminal, Cpu, Binary, Layout, Trophy, Microscope } from 'lucide-react';
 
 interface GridViewProps {
   nodes: RoadmapNode[];
@@ -46,6 +46,13 @@ const CATEGORIES: CategoryGroup[] = [
     subtitle: 'Web 前端、服务端后端、AI 大模型、嵌入式',
     icon: <Layout className="w-5 h-5 text-amber-600" />,
     badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+  },
+  {
+    id: 'research',
+    title: '学术科研与论文启蒙（智锐特色）',
+    subtitle: '文献检索、Zotero、LaTeX 排版、实验复现与大创申报',
+    icon: <Microscope className="w-5 h-5 text-cyan-600" />,
+    badgeColor: 'bg-cyan-50 text-cyan-700 border-cyan-200',
   },
   {
     id: 'growth',
@@ -114,3 +121,4 @@ export const GridView: React.FC<GridViewProps> = ({
     </div>
   );
 };
+

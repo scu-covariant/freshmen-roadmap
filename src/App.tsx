@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ROADMAP_STAGES, ROADMAP_NODES } from './data/roadmapData';
+import { ROADMAP_STAGES, ROADMAP_NODES, ASSOCIATION_INFO } from './data/roadmapData';
 import { RoadmapNode, NodeType } from './types';
 import { useProgress } from './hooks/useProgress';
 import { Header } from './components/Header';
@@ -143,17 +143,26 @@ export function App() {
       />
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-16 py-8 text-center text-xs text-slate-400 space-y-2">
-        <div className="flex items-center justify-center gap-1 text-slate-600">
+      <footer className="bg-white border-t border-slate-200 mt-16 py-10 text-center text-xs text-slate-400 space-y-2.5">
+        <div className="flex flex-wrap items-center justify-center gap-2 text-slate-700 font-semibold">
+          <span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 text-[11px] border border-indigo-200">
+            {ASSOCIATION_INFO.name}
+          </span>
+          <span>技术部 & 科研学术部 联合出品</span>
+          <span>·</span>
+          <span className="text-slate-500 font-normal italic">{ASSOCIATION_INFO.slogan}</span>
+        </div>
+        <div className="flex items-center justify-center gap-1 text-slate-500">
           <span>用</span>
           <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-          <span>与开源精神为大学新生打造 · 始于代码，忠于热爱</span>
+          <span>与极客精神赋能新生与科研启航 · 始于代码，终于卓越</span>
         </div>
-        <p>
-          所有教程链接均精选自 B站优质公开课、名校开源项目及官方文档 · 纯静态网页，支持一键部署到 GitHub Pages
+        <p className="text-[11px] text-slate-400">
+          所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档 · 纯静态架构，支持 GitHub Pages 自动化免费部署
         </p>
       </footer>
     </div>
   );
 }
 export default App;
+

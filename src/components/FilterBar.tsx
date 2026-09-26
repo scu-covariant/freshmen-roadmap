@@ -100,6 +100,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             { id: 'language', label: '语言筑基' },
             { id: 'cs-core', label: 'CS四大件' },
             { id: 'direction', label: '赛道探索' },
+            { id: 'research', label: '学术科研' },
             { id: 'growth', label: '竞赛自学' },
           ].map((cat) => (
             <button
@@ -130,3 +131,4 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     </div>
   );
 };
+

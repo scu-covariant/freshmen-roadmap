@@ -347,3 +347,4 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
     </div>
   );
 };
+
