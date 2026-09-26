@@ -187,6 +187,9 @@ export function App() {
           <span>用最优秀的理论，做最出色的工程</span>
         </div>
         <p className="text-[11px] text-slate-400">
+          本教程某些资源可能需要境外网络环境，请自行查找相关教程，本站不提供。
+        </p>
+        <p className="text-[11px] text-slate-400">
           所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档，若有侵权请联系删除。本站仅为学习交流使用，禁止用于商业用途。
         </p>
       </footer>
