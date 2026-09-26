@@ -162,7 +162,7 @@ export function App() {
         <div className="flex items-center justify-center gap-1 text-slate-500">
           <span>用</span>
           <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-          <span>与极客精神赋能新生与科研启航 · 始于代码，终于卓越</span>
+          <span>与极客精神赋能初学者与科研启航 · 始于代码，终于卓越</span>
         </div>
         <p className="text-[11px] text-slate-400">
           所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档 · 纯静态架构，支持 GitHub Pages 自动化免费部署

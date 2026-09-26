@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({
                   {ASSOCIATION_INFO.shortName}
                 </span>
                 <h1 className="text-base sm:text-lg font-black text-slate-900 tracking-tight group-hover:text-indigo-600 transition-colors">
-                  CS 新生技能与科研路线图
+                  CS 技能与科研通关路线图
                 </h1>
                 <span className="hidden lg:inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-cyan-50 text-cyan-800 border border-cyan-200">
                   <Microscope className="w-3 h-3 text-cyan-600" />

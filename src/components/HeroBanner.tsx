@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Lightbulb, ChevronDown, ChevronUp, Rocket, BookMarked, Terminal, Flame, Microscope, Sparkles } from 'lucide-react';
+import { Lightbulb, ChevronDown, ChevronUp, Terminal, Flame, Microscope, Sparkles, BookMarked } from 'lucide-react';
 import { ASSOCIATION_INFO } from '../data/roadmapData';
 
 export const HeroBanner: React.FC = () => {
@@ -17,7 +17,7 @@ export const HeroBanner: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-cyan-200 text-xs font-bold backdrop-blur-md border border-cyan-400/30">
             <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
-            <span>{ASSOCIATION_INFO.name} · 新生起航与科研指南</span>
+            <span>{ASSOCIATION_INFO.name} · 自学通关与科研指南</span>
           </div>
           <span className="hidden sm:inline-block text-xs text-indigo-300/80">
             {ASSOCIATION_INFO.slogan}
@@ -63,7 +63,7 @@ export const HeroBanner: React.FC = () => {
                 <span>2. 尽早掌握 Git 与 Linux</span>
               </div>
               <p className="text-indigo-200/80 leading-relaxed">
-                大一就把平时所有的代码、实验作业 push 到 GitHub，四年后你的 GitHub 绿格子就是求职与面试最硬核的招牌。
+                尽早把平时所有的代码、实验作业 push 到 GitHub，日后你的 GitHub 绿格子就是求职与面试最硬核的招牌。
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export const HeroBanner: React.FC = () => {
                 <span>4. 尽早建立科研意识（智锐特色）</span>
               </div>
               <p className="text-indigo-200/80 leading-relaxed">
-                不要觉得科研是大三大四的事！大二学会看顶会论文、用 LaTeX 排版、参加大创，将让你在保研和求职中拥有压倒性优势。
+                提前建立科研学术意识，尽早学会看顶会论文、用 LaTeX 排版、参加大创，将让你在保研和深造中拥有压倒性优势。
               </p>
             </div>
           </div>

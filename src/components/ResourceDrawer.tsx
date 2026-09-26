@@ -104,7 +104,7 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
                 </span>
                 {node.isEssential && (
                   <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-600 border border-rose-200">
-                    ★ 新生必学
+                    ★ 核心推荐
                   </span>
                 )}
                 <div className="flex items-center text-amber-400 text-xs pl-1">
@@ -192,7 +192,7 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
             <div className="p-4 rounded-xl bg-indigo-50/70 border border-indigo-100 space-y-1.5">
               <div className="flex items-center gap-2 text-indigo-900 font-semibold text-sm">
                 <HelpCircle className="w-4 h-4 text-indigo-600" />
-                <span>为什么大一 / 初学者一定要学它？</span>
+                <span>为什么初学者一定要学它？</span>
               </div>
               <p className="text-sm text-indigo-950/80 leading-relaxed">
                 {node.whyItMatters}
