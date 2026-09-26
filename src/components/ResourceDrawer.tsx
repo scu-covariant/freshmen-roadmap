@@ -247,45 +247,90 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
               </div>
 
               <div className="space-y-2.5">
-                {node.resources.map((res, index) => (
-                  <a
-                    key={index}
-                    href={res.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block p-3.5 rounded-xl border border-slate-200 hover:border-indigo-400 hover:bg-indigo-50/30 bg-white transition-all shadow-sm hover:shadow"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <div className="flex items-start gap-2.5">
-                        <div className="p-2 rounded-lg bg-slate-100 group-hover:bg-white text-slate-600 group-hover:text-indigo-600 transition-colors mt-0.5">
-                          {getResourceTypeIcon(res.type)}
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <h4 className="text-sm font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                              {res.title}
-                            </h4>
-                            {res.tag && (
-                              <span className="px-1.5 py-0.5 text-[10px] font-medium rounded bg-slate-100 text-slate-600 group-hover:bg-indigo-100 group-hover:text-indigo-700">
-                                {res.tag}
-                              </span>
-                            )}
-                            <span className="text-[10px] text-slate-400">
-                              {getResourceTypeLabel(res.type)}
-                            </span>
+                {node.resources.map((res, index) => {
+                  const hasUrl = Boolean(res.url && res.url.trim() && res.url !== '#');
+
+                  if (!hasUrl) {
+                    return (
+                      <div
+                        key={index}
+                        className="block p-3.5 rounded-xl border border-slate-200/90 bg-slate-50/70 shadow-xs"
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex items-start gap-2.5">
+                            <div className="p-2 rounded-lg bg-amber-50 text-amber-700 shrink-0 mt-0.5 border border-amber-200/60">
+                              {getResourceTypeIcon(res.type)}
+                            </div>
+                            <div>
+                              <div className="flex items-center gap-2 flex-wrap">
+                                <h4 className="text-sm font-semibold text-slate-900">
+                                  {res.title}
+                                </h4>
+                                {res.tag && (
+                                  <span className="px-1.5 py-0.5 text-[10px] font-medium rounded bg-amber-100 text-amber-800">
+                                    {res.tag}
+                                  </span>
+                                )}
+                                <span className="text-[10px] text-slate-400">
+                                  {getResourceTypeLabel(res.type)}
+                                </span>
+                              </div>
+                              {res.description && (
+                                <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                                  {res.description}
+                                </p>
+                              )}
+                            </div>
                           </div>
-                          {res.description && (
-                            <p className="text-xs text-slate-500 mt-1 leading-relaxed">
-                              {res.description}
-                            </p>
-                          )}
+
+                          <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium text-slate-600 bg-white border border-slate-200 shrink-0 mt-1 shadow-2xs">
+                            📚 实体书目 / 馆藏借阅
+                          </span>
                         </div>
                       </div>
+                    );
+                  }
 
-                      <ExternalLink className="w-4 h-4 text-slate-300 group-hover:text-indigo-600 transition-colors shrink-0 mt-1" />
-                    </div>
-                  </a>
-                ))}
+                  return (
+                    <a
+                      key={index}
+                      href={res.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block p-3.5 rounded-xl border border-slate-200 hover:border-indigo-400 hover:bg-indigo-50/30 bg-white transition-all shadow-sm hover:shadow"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex items-start gap-2.5">
+                          <div className="p-2 rounded-lg bg-slate-100 group-hover:bg-white text-slate-600 group-hover:text-indigo-600 transition-colors mt-0.5">
+                            {getResourceTypeIcon(res.type)}
+                          </div>
+                          <div>
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <h4 className="text-sm font-semibold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                                {res.title}
+                              </h4>
+                              {res.tag && (
+                                <span className="px-1.5 py-0.5 text-[10px] font-medium rounded bg-slate-100 text-slate-600 group-hover:bg-indigo-100 group-hover:text-indigo-700">
+                                  {res.tag}
+                                </span>
+                              )}
+                              <span className="text-[10px] text-slate-400">
+                                {getResourceTypeLabel(res.type)}
+                              </span>
+                            </div>
+                            {res.description && (
+                              <p className="text-xs text-slate-500 mt-1 leading-relaxed">
+                                {res.description}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+
+                        <ExternalLink className="w-4 h-4 text-slate-300 group-hover:text-indigo-600 transition-colors shrink-0 mt-1" />
+                      </div>
+                    </a>
+                  );
+                })}
               </div>
             </div>
 

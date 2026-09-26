@@ -447,17 +447,21 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         url: '',
         type: 'book',
         tag: '经典巨著',
-        description: 'C 语言入门经典大部头，适合作为手边随时翻阅的语法字典。',
+        description: 'C 语言入门经典大部头，建议在学校图书馆借阅或阅读纸质版，作为随手翻阅的语法字典。',
       },
     ],
     quests: [
       {
-        title: '手写动态单向链表',
-        description: '使用 struct 和 malloc/free 实现一个单向链表，支持头插法、尾插法、节点遍历与删除，并杜绝内存泄漏。',
+        title: '经典猜数字小游戏',
+        description: '使用 rand() 和循环分支实现 1~100 猜数字游戏，提示“猜大了/猜小了”，直到猜中并统计尝试次数。',
       },
       {
-        title: '简易学生管理系统 CLI',
-        description: '运用结构体与文件读写，实现录入学生成绩、排序并在本地文件中持久化保存。',
+        title: '指针两数交换函数 (Swap)',
+        description: '编写 void swap(int *a, int *b) 函数，在 main 函数中通过取地址传递，亲身体会指针在内存层面的修改原理。',
+      },
+      {
+        title: '结构体成绩单（选做挑战）',
+        description: '定义 struct Student 存放姓名和多门成绩，输入并计算平均分与总分，体验数据封装的基本概念。',
       },
     ],
     prerequisites: ['editor-ide'],
@@ -499,16 +503,20 @@ export const ROADMAP_NODES: RoadmapNode[] = [
       },
       {
         title: '《Effective C++》改善程序与设计的55个具体做法',
-        url: 'https://book.douban.com/subject/5387401/',
+        url: '',
         type: 'book',
         tag: '进阶神书',
-        description: '脱离新手写出健壮、优雅 C++ 代码的必读经典。',
+        description: '脱离新手写出健壮、优雅 C++ 代码的必读经典，建议在图书馆借阅或精读纸质版。',
       },
     ],
     quests: [
       {
-        title: 'STL 容器实战运用',
-        description: '使用 std::unordered_map 和 std::priority_queue 实现经典的前 K 个高频词统计程序。',
+        title: '面向对象类封装初体验',
+        description: '设计一个简单的类（如 Student 学生类或 Rectangle 矩形类），体会 private 私有属性与 public 构造函数/成员方法的封装与访问控制。',
+      },
+      {
+        title: 'STL vector 动态容器与排序',
+        description: '使用 std::vector<int> 动态存入若干数据，使用 std::sort 完成升序排序，并使用现代 C++ 的 auto 范围 for 循环打印输出。',
       },
     ],
     prerequisites: ['c-lang'],
