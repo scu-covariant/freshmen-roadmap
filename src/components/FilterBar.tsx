@@ -26,8 +26,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   stats,
 }) => {
   return (
-    <div className="bg-white rounded-2xl border border-slate-200/90 p-4 shadow-sm space-y-3.5">
-      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+    <div className="bg-white rounded-2xl border border-slate-200/90 p-3 sm:p-4 shadow-sm space-y-3">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3">
         
         {/* Search Input */}
         <div className="relative flex-1">
@@ -50,30 +50,30 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         </div>
 
         {/* Status Filter Buttons */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 -mx-1 px-1">
           <button
             onClick={() => onStatusFilterChange('all')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors ${
+            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 transition-colors ${
               statusFilter === 'all'
                 ? 'bg-indigo-600 text-white shadow-sm'
                 : 'bg-slate-100 text-slate-600 hover:bg-slate-200/70'
             }`}
           >
-            全部技能 ({stats.total})
+            全部 ({stats.total})
           </button>
           <button
             onClick={() => onStatusFilterChange('uncompleted')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors ${
+            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 transition-colors ${
               statusFilter === 'uncompleted'
                 ? 'bg-amber-600 text-white shadow-sm'
                 : 'bg-slate-100 text-slate-600 hover:bg-slate-200/70'
             }`}
           >
-            待学习 ({stats.total - stats.completedCount})
+            待学 ({stats.total - stats.completedCount})
           </button>
           <button
             onClick={() => onStatusFilterChange('completed')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors flex items-center gap-1 ${
+            className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap shrink-0 transition-colors flex items-center gap-1 ${
               statusFilter === 'completed'
                 ? 'bg-emerald-600 text-white shadow-sm'
                 : 'bg-slate-100 text-slate-600 hover:bg-slate-200/70'
@@ -88,8 +88,8 @@ export const FilterBar: React.FC<FilterBarProps> = ({
 
       {/* Category Filter Pills & Mobile Progress */}
       <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 text-xs">
-        <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto">
-          <span className="text-slate-400 flex items-center gap-1 mr-1">
+        <div className="flex items-center gap-1.5 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0 -mx-1 px-1">
+          <span className="text-slate-400 flex items-center gap-1 mr-1 shrink-0">
             <Filter className="w-3.5 h-3.5" />
             <span>分类：</span>
           </span>
@@ -106,7 +106,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
             <button
               key={cat.id}
               onClick={() => onCategoryFilterChange(cat.id as 'all' | NodeType)}
-              className={`px-2.5 py-1 rounded-md transition-colors ${
+              className={`px-2.5 py-1 rounded-md whitespace-nowrap shrink-0 transition-colors ${
                 categoryFilter === cat.id
                   ? 'bg-indigo-100 text-indigo-700 font-semibold'
                   : 'text-slate-500 hover:text-slate-800 hover:bg-slate-100'

@@ -38,20 +38,20 @@ export const AdventureView: React.FC<AdventureViewProps> = ({
             )}
 
             {/* Stage Header Block */}
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm mb-6">
-              <div className="flex items-start gap-4">
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-3 sm:gap-4 p-4 sm:p-6 rounded-2xl bg-white border border-slate-200/80 shadow-sm mb-4 sm:mb-6">
+              <div className="flex items-start gap-3 sm:gap-4">
                 {/* Stage Step Number Badge */}
                 <div
-                  className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${stage.colorTheme.gradient} text-white flex items-center justify-center font-extrabold text-xl shadow-md shrink-0`}
+                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br ${stage.colorTheme.gradient} text-white flex items-center justify-center font-extrabold text-lg sm:text-xl shadow-md shrink-0`}
                 >
                   {stage.order}
                 </div>
 
                 <div className="space-y-1">
-                  <div className="flex flex-wrap items-center gap-2">
-                    <h2 className="text-xl font-bold text-slate-900">{stage.title}</h2>
+                  <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                    <h2 className="text-base sm:text-xl font-bold text-slate-900">{stage.title}</h2>
                     <span
-                      className={`text-xs font-semibold px-2.5 py-0.5 rounded-full ${stage.colorTheme.badgeBg} ${stage.colorTheme.badgeText}`}
+                      className={`text-[10px] sm:text-xs font-semibold px-2 sm:px-2.5 py-0.5 rounded-full ${stage.colorTheme.badgeBg} ${stage.colorTheme.badgeText}`}
                     >
                       {stage.badge}
                     </span>
@@ -62,13 +62,13 @@ export const AdventureView: React.FC<AdventureViewProps> = ({
               </div>
 
               {/* Stage Meta & Progress Pill */}
-              <div className="flex items-center gap-4 border-t md:border-t-0 md:border-l border-slate-100 pt-3 md:pt-0 md:pl-6 shrink-0">
+              <div className="flex flex-wrap items-center justify-between sm:justify-start gap-3 sm:gap-4 border-t md:border-t-0 md:border-l border-slate-100 pt-2.5 md:pt-0 md:pl-6 shrink-0">
                 <div className="flex items-center gap-1.5 text-xs text-slate-500">
                   <Calendar className="w-3.5 h-3.5 text-indigo-500" />
                   <span>{stage.recommendedTime}</span>
                 </div>
 
-                <div className="flex items-center gap-2 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-100">
+                <div className="flex items-center gap-2 bg-slate-50 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl border border-slate-100">
                   <CheckCircle2
                     className={`w-4 h-4 ${
                       stagePercent === 100 ? 'text-emerald-500' : 'text-slate-400'
@@ -83,7 +83,7 @@ export const AdventureView: React.FC<AdventureViewProps> = ({
             </div>
 
             {/* Stage Cards Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 relative z-10 pl-0 lg:pl-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5 relative z-10 pl-0 lg:pl-10">
               {stageNodes.map((node) => (
                 <NodeCard
                   key={node.id}

@@ -80,19 +80,19 @@ export const GridView: React.FC<GridViewProps> = ({
         return (
           <div key={cat.id} className="space-y-4">
             {/* Category Section Header */}
-            <div className="flex items-center justify-between p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
+            <div className="flex items-center justify-between p-3.5 sm:p-4 rounded-2xl bg-white border border-slate-200/80 shadow-sm">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                <div className="p-2 sm:p-2.5 rounded-xl bg-slate-50 border border-slate-100 shrink-0">
                   {cat.icon}
                 </div>
                 <div>
-                  <div className="flex items-center gap-2">
-                    <h2 className="text-base font-bold text-slate-900">{cat.title}</h2>
-                    <span className="text-xs text-slate-400 font-normal">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <h2 className="text-sm sm:text-base font-bold text-slate-900">{cat.title}</h2>
+                    <span className="text-[11px] sm:text-xs text-slate-400 font-normal">
                       ({completedCount} / {catNodes.length} 已掌握)
                     </span>
                   </div>
-                  <p className="text-xs text-slate-500">{cat.subtitle}</p>
+                  <p className="text-xs text-slate-500 line-clamp-1">{cat.subtitle}</p>
                 </div>
               </div>
 
@@ -104,7 +104,7 @@ export const GridView: React.FC<GridViewProps> = ({
             </div>
 
             {/* Category Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-5">
               {catNodes.map((node) => (
                 <NodeCard
                   key={node.id}

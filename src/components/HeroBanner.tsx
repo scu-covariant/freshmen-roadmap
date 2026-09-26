@@ -6,17 +6,17 @@ export const HeroBanner: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 rounded-3xl text-white p-6 sm:p-8 shadow-xl relative overflow-hidden border border-indigo-900/50">
+    <div className="bg-gradient-to-r from-indigo-950 via-indigo-900 to-slate-900 rounded-2xl sm:rounded-3xl text-white p-5 sm:p-8 shadow-xl relative overflow-hidden border border-indigo-900/50">
       
       {/* Background decoration */}
       <div className="absolute -right-12 -top-12 w-72 h-72 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute right-40 -bottom-16 w-64 h-64 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-4xl space-y-4">
+      <div className="relative z-10 max-w-4xl space-y-3.5 sm:space-y-4">
         
         <div className="flex flex-wrap items-center gap-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-indigo-500/20 text-cyan-200 text-xs font-bold backdrop-blur-md border border-cyan-400/30">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-300" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 rounded-full bg-indigo-500/20 text-cyan-200 text-xs font-bold backdrop-blur-md border border-cyan-400/30">
+            <Sparkles className="w-3.5 h-3.5 text-cyan-300 shrink-0" />
             <span>{ASSOCIATION_INFO.name} · 自学通关与科研指南</span>
           </div>
           <span className="hidden sm:inline-block text-xs text-indigo-300/80">
@@ -24,7 +24,7 @@ export const HeroBanner: React.FC = () => {
           </span>
         </div>
 
-        <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white leading-snug">
+        <h2 className="text-xl sm:text-3xl font-black tracking-tight text-white leading-snug">
           从代码萌新到极客与科研新秀，开启你的通关之旅
         </h2>
 

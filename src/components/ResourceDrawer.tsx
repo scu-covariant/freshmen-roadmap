@@ -132,11 +132,11 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
         onClick={onClose}
       />
 
-      <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div className="fixed inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10">
         <div className="w-screen max-w-xl bg-white shadow-2xl flex flex-col border-l border-slate-200 animate-in slide-in-from-right duration-200">
           
           {/* Header */}
-          <div className="p-6 bg-slate-50/80 border-b border-slate-200 flex items-start justify-between">
+          <div className="p-4 sm:p-6 bg-slate-50/80 border-b border-slate-200 flex items-start justify-between">
             <div className="space-y-1.5 pr-4">
               <div className="flex flex-wrap items-center gap-2">
                 <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-50 text-indigo-700 border border-indigo-200">
@@ -181,7 +181,7 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
           </div>
 
           {/* Status Bar */}
-          <div className="px-6 py-3 bg-white border-b border-slate-100 flex items-center justify-between">
+          <div className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white border-b border-slate-100 flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-1.5 text-xs text-slate-500">
               <Clock className="w-3.5 h-3.5" />
               <span>建议投入：<strong className="text-slate-700">{node.estimatedTime}</strong></span>
@@ -226,7 +226,7 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
           </div>
 
           {/* Body Content */}
-          <div className="flex-1 overflow-y-auto p-6 space-y-6">
+          <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5 sm:space-y-6">
             
             {/* Why it matters callout */}
             <div className="p-4 rounded-xl bg-indigo-50/70 border border-indigo-100 space-y-1.5">
