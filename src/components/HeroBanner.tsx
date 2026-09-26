@@ -29,7 +29,7 @@ export const HeroBanner: React.FC = () => {
         </h2>
 
         <p className="text-indigo-200/90 text-sm sm:text-base leading-relaxed max-w-3xl">
-          大学计算机系到底该怎么学？什么时候学 Git？学术科研怎么入门？这个路线图由<strong>智锐科创协会</strong>整理，涵盖工具链、核心语言、专业四大件、工业界赛道与学术科研启蒙，点击任意节点即可直达外链，边学边打卡！
+          大学计算机系到底该怎么学？什么时候学 Git？学术科研怎么入门？这个路线图由<strong>智锐科创协会</strong>整理，涵盖工具链、核心语言、专业四大件、工业界赛道与学术科研启蒙，点击任意节点即可直达外链，边学边打卡！本教程某些资源可能需要境外网络环境，请自行查找相关教程，本站不提供。
         </p>
 
         {/* Quick Tips Toggle */}
