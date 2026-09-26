@@ -4,7 +4,6 @@
 > —— 四川大学智锐科创计算机协会 (SCU Covariant) 出品
 
 🌐 **路线图在线交互网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
-🏛️ **智锐科创协会官方主页**：[https://unicov.cn/scu/](https://unicov.cn/scu/)
 
 ---
 
@@ -84,7 +83,6 @@
 
 智锐科创协会是由川大计算机、软件、网安及全校对信息技术抱有热忱的同学自发组织并传承的学生科技社团组织。
 
-- 🌐 **路线图网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
 - 🏛️ **协会官方主页**：[https://unicov.cn/scu/](https://unicov.cn/scu/)
 - 📂 **GitHub 组织主页**：[https://github.com/scu-covariant](https://github.com/scu-covariant)
 - 📚 **历史沉淀指导**：[CSGuidance 仓库](https://github.com/scu-covariant/CSGuidance)
