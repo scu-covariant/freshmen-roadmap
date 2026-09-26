@@ -21,6 +21,8 @@ import {
   FileText,
   Library,
   FlaskConical,
+  Container,
+  Calculator,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -46,6 +48,8 @@ const ICON_MAP: Record<string, LucideIcon> = {
   FileText,
   Library,
   FlaskConical,
+  Container,
+  Calculator,
 };
 
 interface IconRendererProps {

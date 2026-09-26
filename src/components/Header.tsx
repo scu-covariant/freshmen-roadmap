@@ -40,10 +40,12 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center justify-between h-16 sm:h-20">
             
             {/* Logo & Main Title with Association Identity */}
-            <div className="flex items-center gap-3.5">
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-700 to-cyan-600 text-white flex items-center justify-center shadow-lg shadow-indigo-200 shrink-0">
-                <Compass className="w-6 h-6 animate-pulse-subtle" />
-              </div>
+            <div className="flex items-center gap-3">
+              <img
+                src="./zhirui-logo.png"
+                alt="智锐科创"
+                className="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl object-contain bg-white p-1 border border-indigo-100 shadow-md shadow-indigo-100 shrink-0"
+              />
               <div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-extrabold bg-indigo-600 text-white shadow-xs">
@@ -145,11 +147,11 @@ export const Header: React.FC<HeaderProps> = ({
 
               {/* GitHub Link */}
               <a
-                href="https://github.com"
+                href="https://github.com/scu-covariant/CSGuidance"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition-colors border border-slate-200"
-                title="在 GitHub 查看路线图源码"
+                title="在 GitHub 查看智锐科创 CSGuidance 仓库"
               >
                 <Github className="w-4 h-4" />
               </a>
