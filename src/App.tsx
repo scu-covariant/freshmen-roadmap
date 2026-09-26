@@ -145,9 +145,16 @@ export function App() {
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 mt-16 py-10 text-center text-xs text-slate-400 space-y-2.5">
         <div className="flex flex-wrap items-center justify-center gap-2 text-slate-700 font-semibold">
-          <span className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 text-[11px] border border-indigo-200">
-            {ASSOCIATION_INFO.name}
-          </span>
+          <a
+            href="https://unicov.cn/scu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-2 py-0.5 rounded bg-indigo-50 text-indigo-700 hover:bg-indigo-100 text-[11px] border border-indigo-200 transition-colors inline-flex items-center gap-1"
+            title="访问四川大学智锐科创计算机协会官网"
+          >
+            <span>{ASSOCIATION_INFO.name}</span>
+            <span>↗</span>
+          </a>
           <span>技术部 & 科研学术部 联合出品</span>
           <span>·</span>
           <span className="text-slate-500 font-normal italic">{ASSOCIATION_INFO.slogan}</span>
