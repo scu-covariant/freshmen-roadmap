@@ -64,7 +64,7 @@ export function useProgress(allNodeIds: string[]) {
         particleCount: 80,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ['#6366f1', '#10b981', '#f59e0b', '#ec4899', '#3b82f6'],
+        colors: ['#108fcc', '#10b981', '#f59e0b', '#38bdf8', '#0284c7'],
       });
     } catch {
       // ignore
