@@ -564,11 +564,11 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         description: '百万程序员启蒙读物，排版清晰，内置在线交互代码框。',
       },
       {
-        title: 'B站 - 爬虫与自动化小试牛刀 (UP: 骆昊)',
-        url: 'https://www.bilibili.com/video/BV1w4411v76x',
+        title: 'B站 - Python超强爬虫8天速成（完整版）爬取各种网站数据实战案例',
+        url: 'https://www.bilibili.com/video/BV1ha4y1H7sx',
         type: 'video',
         tag: '通俗易懂',
-        description: '结合生活实用小脚本，用代码帮你自动批量下载壁纸或处理 Excel。',
+        description: '结合生活实用小脚本，用代码帮你自动批量爬取网站信息。',
       },
     ],
     quests: [
@@ -608,21 +608,21 @@ export const ROADMAP_NODES: RoadmapNode[] = [
       },
       {
         title: 'MIT 18.06 Gilbert Strang 线性代数公开课',
-        url: 'https://open.163.com/newview/movie/courseintro?mid=M82ICR2CP',
+        url: 'https://www.bilibili.com/video/BV1zx411g7gq',
         type: 'video',
         tag: '名校权威',
         description: '传奇教授 Gilbert Strang 经典名课，直击应用与核心定理。',
       },
       {
-        title: 'B站 - 宋浩老师《线性代数》《高等数学》期末救命课',
-        url: 'https://space.bilibili.com/264219488',
+        title: 'B站 - 一高数《线性代数》《高等数学》课程',
+        url: 'https://space.bilibili.com/1035929235',
         type: 'video',
         tag: '期末神器',
-        description: '板书条理极度清晰，拯救无数大学生期末考的良心教学系列。',
+        description: '板书条理极度清晰，拯救无数大学生期末考的良心教学系列，适合平时自学和周末复习。',
       },
       {
         title: '《离散数学及其应用》(Kenneth H. Rosen 著)',
-        url: 'https://book.douban.com/subject/26343542/',
+        url: '',
         type: 'book',
         tag: '国外圣经',
         description: '全球绝大多数顶级计算机系采用的离散数学权威教材。',
@@ -1152,8 +1152,8 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     ],
     resources: [
       {
-        title: 'B站 - 【科研必备】Zotero 保姆级使用与插件配置教程',
-        url: 'https://www.bilibili.com/video/BV1pL4y197bF',
+        title: 'B站 - Zotero7保姆级教程｜科研党/研究生必备文献管理终极指南',
+        url: 'https://www.bilibili.com/video/BV136dUYKEYU',
         type: 'video',
         tag: '保姆级视频',
         description: '从安装、同步、安装翻译插件到协同写作全流程教学。',
@@ -1204,9 +1204,9 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     estimatedTime: '1 ~ 2 周',
     isEssential: true,
     summary: '告别 Word 公式对齐错位与参考文献序号混乱的噩梦，掌握全球顶会公认的 Overleaf 与 LaTeX 专业学术排版。',
-    whyItMatters: '无论是发表高水平学术论文，还是撰写国家级大创申请书，LaTeX 都是展现科研素养的最专业名片。',
+    whyItMatters: '无论是发表高水平学术论文，还是撰写国家级大创申请书，LaTeX 都是展现科研素养的最专业名片。（注：感兴趣也可尝试另一种工具 Typst,语法较为简单，但生态一般，很多时候找不到模板，大模型也会在输出的时候莫名切换到latex语法……）',
     keyPoints: [
-      '在线协作云平台 Overleaf：模版导入、多人实时协同批注、历史版本对比',
+      '在线协作云平台 Overleaf/FlyLaTeX：模版导入、多人实时协同批注、历史版本对比（单人也可以在 VS Code 本地配置）',
       '学术顶会标准模板：IEEE Transactions、ACM Conference、Springer 模版调用',
       '数学公式排版：行内公式 ($...$)、块级公式 ($$...$$)、矩阵、分段函数与希腊字母',
       '参考文献自动化：BibTeX (.bib) 格式、Google Scholar 一键导出 Cite、\\cite 自动引用编号',
@@ -1235,8 +1235,8 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         description: '截图任意复杂数学公式或手写草稿，自动转化为标准的 LaTeX 代码。',
       },
       {
-        title: 'B站 - 清华大学 LaTeX 极速入门教程',
-        url: 'https://www.bilibili.com/video/BV1b7411x7EB',
+        title: 'B站 - LaTeX排版零基础速成教程',
+        url: 'https://www.bilibili.com/video/BV1Mc411S75c',
         type: 'video',
         tag: 'B站精讲',
         description: '直观演示论文排版实操，适合跟着一步步敲出第一篇排版漂亮的学术论文。',
@@ -1245,7 +1245,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     quests: [
       {
         title: '排版你的第一篇双栏学术文档',
-        description: '在 Overleaf 上套用 IEEE Conference 模版，排版一段包含 1 个复杂求和公式、1 张图表及 3 篇 BibTeX 参考文献的文档。',
+        description: '在 Overleaf 或其它平台上套用 IEEE Conference 模版，排版一段包含 1 个复杂求和公式、1 张图表及 3 篇 BibTeX 参考文献的文档。',
       },
     ],
     prerequisites: ['geek-mindset'],
@@ -1285,8 +1285,8 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         description: '目前全球顶会作者最常用的实验可视化平台，一行代码记录训练动态。',
       },
       {
-        title: 'B站 - 深度学习论文代码复现手把手指南',
-        url: 'https://www.bilibili.com/video/BV1Z44y1r74c',
+        title: 'B站 - 深度学习从0配置环境到复现跑通代码',
+        url: 'https://www.bilibili.com/video/BV1VZ421a7rh',
         type: 'video',
         tag: '避坑指南',
         description: '详解如何处理依赖版本冲突、显存不足报错及数据路径配置。',
@@ -1321,8 +1321,8 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     ],
     resources: [
       {
-        title: 'B站 - 本科生如何提前联系导师进实验室做科研（避坑全攻略）',
-        url: 'https://www.bilibili.com/video/BV15y4y1i7bT',
+        title: '小红书等平台搜索 - 本科生如何提前联系导师进实验室做科研',
+        url: '',
         type: 'video',
         tag: '保姆攻略',
         description: '详解如何撰写学术自荐信、导师看重本科生的哪些核心素质。',
@@ -1366,8 +1366,9 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     summary: '盘点大学计算机含金量最高、认可度最广的权威比赛，制定合理的备赛策略。',
     whyItMatters: '竞赛国奖往往是高校保研加分、顶级大厂校招直推的最强硬通货！',
     keyPoints: [
-      '算法竞赛主流：蓝桥杯软件类（门槛亲民，适合初学者试水拿奖建立信心）、ACM-ICPC / CCPC（世界顶级大学生算法竞赛，硬核至极）',
+      '算法竞赛主流：蓝桥杯软件类（门槛亲民，适合初学者试水拿奖建立信心，但保研似乎已经降档甚至除名）、ACM-ICPC / CCPC（世界顶级大学生算法竞赛，硬核至极）',
       '工程与开发类竞赛：中国软件杯（大厂真实业务命题）、微信小程序开发大赛、全国大学生计算机设计大赛',
+      '数学建模比赛：全国大学生数学建模竞赛、美国大学生数学建模竞赛（最新保研政策只认F奖及以上）',
       '综合科研创客：挑战杯、“互联网+”大学生创新创业大赛（偏重商业模式与科技创新落地）',
       '比赛选型建议：前期先冲算法比赛筑底，后续拉队伍做项目冲工程比赛。',
     ],

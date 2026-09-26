@@ -1,9 +1,9 @@
 # 🎓 智锐科创 · 计算机技能成长与科研通关路线图
 
-> **用最优秀的理论，做最出色的工程。**  
+> **用最优秀的理论，做最出色的工程。**
 > —— 四川大学智锐科创计算机协会 (SCU Covariant) 出品
 
-🌐 **路线图在线交互网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)  
+🌐 **路线图在线交互网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
 🏛️ **智锐科创协会官方主页**：[https://unicov.cn/scu/](https://unicov.cn/scu/)
 
 ---
@@ -11,6 +11,7 @@
 ## 📖 路线图简介与初衷
 
 在进入大学计算机及相关专业学习时，很多初学者常常面临严重的**信息差与方向迷茫**：
+
 - *“刚入学到底先学什么？要不要学 Git 和 Linux？”*
 - *“每天在 B 站收藏了许多视频教程，敲代码却依然无从下手？”*
 - *“都说要搞科研、进实验室、打大创挑战杯，可学术论文究竟怎么读？LaTeX 怎么用？”*
@@ -81,7 +82,7 @@
 
 ## 🤝 关于智锐科创协会 (SCU Covariant)
 
-智锐科创计算机协会是由川大计算机、软件、网安及全校对信息技术抱有热忱的同学自发组织并传承的学生科技组织。
+智锐科创协会是由川大计算机、软件、网安及全校对信息技术抱有热忱的同学自发组织并传承的学生科技社团组织。
 
 - 🌐 **路线图网址**：[https://scu-covariant.github.io/freshmen-roadmap/](https://scu-covariant.github.io/freshmen-roadmap/)
 - 🏛️ **协会官方主页**：[https://unicov.cn/scu/](https://unicov.cn/scu/)

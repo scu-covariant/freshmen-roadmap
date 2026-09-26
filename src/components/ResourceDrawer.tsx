@@ -13,9 +13,10 @@ import {
   Sparkles, 
   Target, 
   ArrowRight,
-  HelpCircle
+  HelpCircle,
+  Search
 } from 'lucide-react';
-import { RoadmapNode, NodeStatus, ResourceType } from '../types';
+import { RoadmapNode, NodeStatus, ResourceType, ResourceLink } from '../types';
 import { IconRenderer } from './IconRenderer';
 
 interface ResourceDrawerProps {
@@ -78,6 +79,45 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
       default:
         return '教程外链';
     }
+  };
+
+  const getNoUrlBadge = (res: ResourceLink) => {
+    if (res.note) return res.note;
+    switch (res.type) {
+      case 'book':
+        return '📚 纸质书目 / 馆藏借阅';
+      case 'video':
+        return '🎬 推荐搜索相关视频';
+      case 'tool':
+        return '🛠️ 建议自行检索配置';
+      case 'interactive':
+        return '💻 建议在线实操体验';
+      case 'doc':
+      default:
+        return '💡 经验参考 / 检索学习';
+    }
+  };
+
+  const getSearchLink = (res: ResourceLink) => {
+    const prefixes = ['小红书等平台搜索', '小红书', 'B站', '知乎', 'Google', '百度'];
+    let cleanTitle = res.title;
+    for (const p of prefixes) {
+      if (cleanTitle.startsWith(p)) {
+        cleanTitle = cleanTitle.slice(p.length).replace(/^[\s\-:—·]+/, '');
+        break;
+      }
+    }
+    const query = encodeURIComponent(cleanTitle || res.title);
+    if (res.title.includes('小红书')) {
+      return `https://www.xiaohongshu.com/search_result?keyword=${query}`;
+    }
+    if (res.type === 'video' || res.title.includes('B站')) {
+      return `https://search.bilibili.com/all?keyword=${query}`;
+    }
+    if (res.type === 'book') {
+      return `https://search.douban.com/book/subject_search?search_text=${query}`;
+    }
+    return `https://www.bing.com/search?q=${query}`;
   };
 
   const prerequisiteNodes = (node.prerequisites || [])
@@ -283,9 +323,22 @@ export const ResourceDrawer: React.FC<ResourceDrawerProps> = ({
                             </div>
                           </div>
 
-                          <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium text-slate-600 bg-white border border-slate-200 shrink-0 mt-1 shadow-2xs">
-                            📚 实体书目 / 馆藏借阅
-                          </span>
+                          <div className="flex flex-col items-end gap-1.5 shrink-0 mt-0.5">
+                            <span className="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-medium text-slate-600 bg-white border border-slate-200 shadow-2xs">
+                              {getNoUrlBadge(res)}
+                            </span>
+                            <a
+                              href={getSearchLink(res)}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-[10px] font-medium text-indigo-600 hover:text-indigo-800 bg-indigo-50/80 hover:bg-indigo-100 px-2 py-0.5 rounded border border-indigo-200/60 transition-colors"
+                              title={`在对应平台检索：“${res.title}”`}
+                            >
+                              <Search className="w-3 h-3" />
+                              <span>快捷搜索</span>
+                              <ExternalLink className="w-2.5 h-2.5 opacity-60" />
+                            </a>
+                          </div>
                         </div>
                       </div>
                     );

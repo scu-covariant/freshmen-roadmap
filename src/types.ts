@@ -8,6 +8,7 @@ export interface ResourceLink {
   type: ResourceType;
   tag?: string; // 比如 "B站顶流", "官方中文", "互动练习", "零基础推荐"
   description?: string;
+  note?: string; // 无直接外链时的说明，如 "推荐借阅纸质版"、"建议小红书/B站搜索"
 }
 
 export interface MiniQuest {
