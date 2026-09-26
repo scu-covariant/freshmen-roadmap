@@ -131,7 +131,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
       'Markdown 纯文本排版语法（使用 Typora / Obsidian 写技术笔记）',
       '《提问的智慧》：如何精准描述环境、复现步骤、提供错误日志',
       '科学信息检索技巧（Google、Stack Overflow 关键字搜索逻辑）',
-      '现代 AI 辅助认知（善用 ChatGPT/Claude/Copilot 答疑，切忌无脑复制）',
+      '现代 AI 辅助认知（善用 DeepSeekChatGPT/Claude等 AI 工具答疑，切忌无脑复制）',
     ],
     resources: [
       {
@@ -156,11 +156,11 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         description: '被全网技术社区奉为准则，教你如何提问才能获得大牛耐心解答。',
       },
       {
-        title: 'B站 - 程序员如何科学优雅地记技术笔记',
-        url: 'https://www.bilibili.com/video/BV1f4411p7qP',
+        title: 'B站 - 8分钟让你快速掌握Markdown',
+        url: 'https://www.bilibili.com/video/BV1JA411h7Gw',
         type: 'video',
         tag: 'B站视频',
-        description: '建立自己的第二大脑，告别学了就忘的恶性循环。',
+        description: '快速学习 Markdown 的语法。',
       },
     ],
     quests: [
@@ -170,7 +170,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
       },
       {
         title: '写第一篇 Markdown 技术笔记',
-        description: '使用 VS Code 或 Obsidian 撰写一篇包含标题、多级列表、代码高亮和外链的自学笔记。',
+        description: '使用 VS Code 或其它你喜欢的 Markdown 笔记软件撰写一篇包含标题、多级列表、代码高亮和外链的自学笔记。',
       },
     ],
   },
@@ -327,11 +327,11 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         description: '微软官方指南，讲解调试、任务配置、快捷键 cheat sheet。',
       },
       {
-        title: 'B站 - 【VS Code 从入门到精通】配置神仙级开发环境',
-        url: 'https://www.bilibili.com/video/BV117411n7Tr',
+        title: 'B站 - vscode 关于C/C++的环境配置全站最简单易懂',
+        url: 'https://www.bilibili.com/video/BV1kR4y1M7R8',
         type: 'video',
         tag: 'B站精品',
-        description: '手把手教你配置 C/C++、Python、前端环境与高颜值主题。',
+        description: '手把手教你配置 C/C++ 等开发环境。',
       },
     ],
     quests: [
@@ -343,6 +343,10 @@ export const ROADMAP_NODES: RoadmapNode[] = [
         title: '完成一次断点调试',
         description: '写一个包含循环计算的小程序，打上下断点，单步执行并观察内存变量的递增过程。',
       },
+      {
+        title: '尝试给自己的 Vs Code 加上背景图片（选做）',
+        description: '查阅资料安装插件并配置一张你喜欢的背景图。',
+      }
     ],
     prerequisites: ['geek-mindset'],
   },
@@ -358,7 +362,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     estimatedTime: '3 ~ 5 天',
     isEssential: false,
     summary: '掌握轻量级容器虚拟化技术，将开发环境、数据库与依赖打包为可移植镜像，确保各操作系统运行一致。',
-    whyItMatters: '川大智锐科创资料索引核心推荐！无论是部署后端服务、跑科研开源代码，还是团队协作开发，Docker 都是消除环境配置冲突的终极银弹。',
+    whyItMatters: '无论是部署后端服务、跑科研开源代码，还是团队协作开发，Docker 都是消除环境配置冲突的终极银弹。',
     keyPoints: [
       'Docker 核心三要素：镜像 (Image)、容器 (Container)、仓库 (Registry/Docker Hub)',
       '常用核心命令：docker pull, docker run -d -p, docker ps, docker exec -it, docker stop',
@@ -426,7 +430,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     resources: [
       {
         title: 'B站 - 浙江大学 翁恺老师《C语言程序设计》',
-        url: 'https://www.bilibili.com/video/BV19W411B72b',
+        url: 'https://www.bilibili.com/video/BV1dr4y1n7vA',
         type: 'video',
         tag: '公认神课',
         description: '中国计算机启蒙天花板级公开课！翁恺老师深入浅出，幽默透彻，强烈必看。',
@@ -440,7 +444,7 @@ export const ROADMAP_NODES: RoadmapNode[] = [
       },
       {
         title: 'C Primer Plus (第6版 中文版)',
-        url: 'https://book.douban.com/subject/26784308/',
+        url: '',
         type: 'book',
         tag: '经典巨著',
         description: 'C 语言入门经典大部头，适合作为手边随时翻阅的语法字典。',
