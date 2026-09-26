@@ -1,34 +1,19 @@
 # 🎓 智锐科创协会 · CS 技能成长与科研通关路线图 (CS Guidance Roadmap)
 
-> **四川大学智锐科创计算机协会 (SCU Covariant) 官方出品**  
+> **智锐科创协会 (SCU Covariant) 出品**  
 > 专为计算机初学者、自学者与科研新秀打造的交互式通关指南。涵盖开发工具箱（Git/Linux/VS Code/Docker）、核心编程语言（C/C++/Python/数学基石）、学术科研启蒙（Zotero/LaTeX/论文复现/大创）、计算机专业四大件（数据结构/计组/操作系统/网络）、工业界工程赛道（Web/后端/深度学习/大模型LLM/嵌入式）与精选优质免费自学视频/文档外链。
 
 ![GitHub Pages Compatible](https://img.shields.io/badge/Deployment-GitHub%20Pages-blue)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4-38bdf8)
 ![Vite](https://img.shields.io/badge/Vite-6-646cff)
-![Zhirui Innovation](https://img.shields.io/badge/四川大学智锐科创协会-官方出品-indigo)
-
----
-
-## 🏛️ 关于智锐科创协会
-
-**四川大学智锐科创计算机协会（协变团队）**是立足高校前沿技术探索与工程实践的学生科技创新组织。坚持**「锐意创新 · 研产并进 · 知行合一」**的理念，推动工程开发与学术科研双轨并行：
-
-- 🔬 **科研学术部**：顶会论文精读、科研工具链（Zotero/LaTeX）、学术实验复现、大创与挑战杯学术科技作品孵化。
-- 💻 **软件工程部**：Web 全栈开发、开源协同、移动与桌面端工程、大型软件架构实战。
-- 🤖 **人工智能部**：大模型 Agent 应用开发、计算机视觉 (CV)、自然语言处理 (NLP) 与前沿算法复现。
-- ⚙️ **硬件物联部**：单片机 (STM32/ESP32)、智能传感器、物联网应用与全国大学生电子设计竞赛备赛。
-
-🌐 **官方站点**：[unicov.cn/scu](https://unicov.cn/scu/)  
-😸 **GitHub 组织**：[@scu-covariant](https://github.com/scu-covariant)  
-📂 **源资料索引**：[scu-covariant/CSGuidance](https://github.com/scu-covariant/CSGuidance)
+![Zhirui Innovation](https://img.shields.io/badge/智锐科创协会-出品-indigo)
 
 ---
 
 ## ✨ 核心特性
 
-- 🏛️ **智锐科创深度印记**：融入社团愿景、部门介绍、官方主页直达链接与自学防坑指南。
+- 🏛️ **智锐科创深度印记**：融入官方主页直达链接与自学防坑指南。
 - 🗺️ **双视图自由切换**：
   - **关卡闯关流 (Adventure View)**：循序渐进的通关路线，分步解锁阶段性技能。
   - **模块全景技能树 (Grid View)**：按开发工具、编程语言、学术科研、核心专业课、工程赛道、竞赛自学模块分类平铺，直观清晰。
@@ -90,32 +75,6 @@ npm run dev
 
 ---
 
-## 🌐 部署到 GitHub Pages 保姆级步骤
-
-本项目已配置相对路径以及自动化工作流文件 `.github/workflows/deploy.yml`，只需以下 3 步即可永久免费发布：
-
-### 第一步：在 GitHub 上创建仓库并推送代码
-在 GitHub 网页上新建一个公开仓库（例如 `freshmen-roadmap` 或 `cs-guidance`），然后在本地终端执行：
-
-```bash
-# 关联远程仓库并推送
-git remote add origin https://github.com/<你的用户名>/<你的仓库名>.git
-git push -u origin main
-```
-
-### 第二步：开启 GitHub Pages 设置
-1. 打开你的 GitHub 仓库主页，点击顶部的 **Settings**（设置）。
-2. 在左侧菜单栏中找到并点击 **Pages**。
-3. 在 **Build and deployment** 下方的 **Source** 下拉菜单中，选择：
-   👉 **`GitHub Actions`**。
-
-### 第三步：等待自动部署完成
-- 切换到仓库的 **Actions** 标签页，你会看到名为 `Deploy to GitHub Pages` 的工作流正在自动运行（通常耗时约 1 分钟）。
-- 构建完成后，访问链接：
-  `https://<你的用户名>.github.io/<你的仓库名>/`
-  即可公开访问你的路线图！
-
----
 
 ## ✍️ 如何自定义 / 增加更多技能与学习链接？
 
@@ -126,8 +85,8 @@ git push -u origin main
 
 ---
 
-## 🤝 四川大学智锐科创计算机协会 · 研产并进
+## 🤝 智锐科创协会 · 研产并进
 
-智锐科创协会技术部与科研学术部欢迎所有同学提出宝贵建议与优质资源推荐！
+智锐科创协会欢迎所有同学提出宝贵建议与优质资源推荐！
 - 欢迎提交 PR 补充最新顶会论文清单、教程与工具
 - 欢迎校内初学者与各年级同学加入智锐科创协会，一起搞技术、做科研、打比赛！
