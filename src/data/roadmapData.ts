@@ -9,13 +9,6 @@ export const ASSOCIATION_INFO = {
   website: 'https://unicov.cn/scu/',
   github: 'https://github.com/scu-covariant',
   csGuidance: 'https://github.com/scu-covariant/CSGuidance',
-  description: '四川大学智锐科创计算机协会（协变团队）是由川大计算机、软件、网安及全校对信息技术抱有热忱的同学自发组织并传承的学生科技组织。坚持工程落地与学术科研双轨驱动，致力于消除初学者的信息差与配环境迷茫，培育极客工匠与学术新星。',
-  departments: [
-    { name: '科研学术部', desc: '顶会论文精读、科研工具链、学术实验复现、大创与挑战杯培育' },
-    { name: '软件工程部', desc: 'Web全栈、移动开发、开源项目协同、工程架构与敏捷实战' },
-    { name: '人工智能部', desc: '大模型应用开发、计算机视觉、自然语言处理与算法复现' },
-    { name: '硬件物联部', desc: '嵌入式单片机、智能传感器、物联网应用与全国电赛备战' },
-  ],
 };
 
 export const ROADMAP_STAGES: RoadmapStage[] = [
