@@ -1417,11 +1417,11 @@ export const ROADMAP_NODES: RoadmapNode[] = [
     ],
     resources: [
       {
-        title: 'CSGuide 计算机全栈学习路线 (川大软院学长@编程指北 打造)',
-        url: 'https://github.com/imarvinle/CSGuide',
+        title: '四川大学计算机学院本科课程资料',
+        url: 'https://github.com/KarryRen/SCU-CS-Class-Materials',
         type: 'doc',
         tag: '川大学长力作',
-        description: '四川大学2016级软件学院学长倾心打造的计算机自学路线，知乎万粉推荐，兼顾科班与工程实践。',
+        description: '21级保研至北大学长团整理，带你打通四年难关。',
       },
       {
         title: '四川大学智锐科创计算机协会资料索引 (CSGuidance)',
