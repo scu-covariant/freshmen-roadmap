@@ -29,7 +29,7 @@ export const HeroBanner: React.FC = () => {
         </h2>
 
         <p className="text-indigo-200/90 text-sm sm:text-base leading-relaxed max-w-3xl">
-          大学计算机系到底该怎么学？什么时候学 Git？学术科研怎么入门？这个路线图由<strong>智锐科创协会</strong>技术部与科研学术部联合整理，涵盖工具链、核心语言、专业四大件、工业界赛道与学术科研启蒙，点击任意节点即可直达外链，边学边打卡！
+          大学计算机系到底该怎么学？什么时候学 Git？学术科研怎么入门？这个路线图由<strong>智锐科创协会</strong>整理，涵盖工具链、核心语言、专业四大件、工业界赛道与学术科研启蒙，点击任意节点即可直达外链，边学边打卡！
         </p>
 
         {/* Quick Tips Toggle */}
@@ -80,10 +80,10 @@ export const HeroBanner: React.FC = () => {
             <div className="p-4 rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 space-y-1.5">
               <div className="font-bold text-cyan-300 flex items-center gap-1.5">
                 <Microscope className="w-4 h-4 shrink-0" />
-                <span>4. 尽早建立科研意识（智锐特色）</span>
+                <span>4. 建立科研意识</span>
               </div>
               <p className="text-indigo-200/80 leading-relaxed">
-                提前建立科研学术意识，尽早学会看顶会论文、用 LaTeX 排版、参加大创，将让你在保研和深造中拥有压倒性优势。
+                提前建立科研学术意识，学会看顶会论文、用 LaTeX 排版、参加大创，将让你在保研和深造中拥有压倒性优势。
               </p>
             </div>
           </div>

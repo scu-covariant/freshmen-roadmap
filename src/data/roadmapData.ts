@@ -1,13 +1,14 @@
 import { RoadmapStage, RoadmapNode } from '../types';
 
 export const ASSOCIATION_INFO = {
-  name: '四川大学智锐科创计算机协会',
-  shortName: '川大智锐科创',
-  enName: 'SCU Covariant / Zhirui Tech Innovation Association',
-  slogan: '锐意创新 · 研产并进 · 知行合一',
-  badge: '四川大学智锐科创 官方维护',
+  name: '智锐科创协会',
+  shortName: '智锐科创',
+  enName: 'Covariant',
+  slogan: '用最优秀的理论，做最出色的工程',
+  badge: '智锐科创协会 官方维护',
   website: 'https://unicov.cn/scu/',
   github: 'https://github.com/scu-covariant',
+  repo: 'https://github.com/scu-covariant/freshmen-roadmap',
   csGuidance: 'https://github.com/scu-covariant/CSGuidance',
 };
 

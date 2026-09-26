@@ -7,7 +7,8 @@ import {
   BookMarked,
   Microscope,
   Globe,
-  ExternalLink
+  ExternalLink,
+  Share2
 } from 'lucide-react';
 import { ASSOCIATION_INFO } from '../data/roadmapData';
 
@@ -21,6 +22,7 @@ interface HeaderProps {
     percent: number;
   };
   onResetProgress: () => void;
+  onOpenShare: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -28,6 +30,7 @@ export const Header: React.FC<HeaderProps> = ({
   onViewModeChange,
   stats,
   onResetProgress,
+  onOpenShare,
 }) => {
   return (
     <header className="sticky top-0 z-30 bg-white/85 backdrop-blur-md border-b border-slate-200">
@@ -148,13 +151,24 @@ export const Header: React.FC<HeaderProps> = ({
               )}
             </div>
 
+            {/* Share Progress Button */}
+            <button
+              type="button"
+              onClick={onOpenShare}
+              className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl text-xs font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all shadow-xs"
+              title="生成并复制我的专属学习进度分享链接（URL Hash）"
+            >
+              <Share2 className="w-3.5 h-3.5 text-emerald-600" />
+              <span className="hidden sm:inline">分享进度</span>
+            </button>
+
             {/* GitHub Link */}
             <a
-              href="https://github.com/scu-covariant/CSGuidance"
+              href={ASSOCIATION_INFO.repo || 'https://github.com/scu-covariant/freshmen-roadmap'}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-slate-600 hover:text-slate-900 hover:bg-slate-100 rounded-xl transition-colors border border-slate-200"
-              title="在 GitHub 查看智锐科创 CSGuidance 仓库"
+              title="在 GitHub 查看 freshmen-roadmap 仓库源码"
             >
               <Github className="w-4 h-4" />
             </a>

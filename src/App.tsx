@@ -8,6 +8,8 @@ import { FilterBar } from './components/FilterBar';
 import { AdventureView } from './components/AdventureView';
 import { GridView } from './components/GridView';
 import { ResourceDrawer } from './components/ResourceDrawer';
+import { ShareModal } from './components/ShareModal';
+import { ImportProgressModal } from './components/ImportProgressModal';
 import { Sparkles, HelpCircle, Code, Heart, SearchX } from 'lucide-react';
 
 export function App() {
@@ -16,6 +18,7 @@ export function App() {
   const [statusFilter, setStatusFilter] = useState<'all' | 'uncompleted' | 'completed'>('all');
   const [categoryFilter, setCategoryFilter] = useState<'all' | NodeType>('all');
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [isShareModalOpen, setIsShareModalOpen] = useState(false);
 
   const allNodeIds = useMemo(() => ROADMAP_NODES.map((n) => n.id), []);
   const {
@@ -23,6 +26,9 @@ export function App() {
     setNodeStatus,
     toggleNodeCompleted,
     resetProgress,
+    incomingProgress,
+    applyIncomingProgress,
+    dismissIncomingProgress,
     stats,
   } = useProgress(allNodeIds);
 
@@ -74,6 +80,7 @@ export function App() {
         onViewModeChange={setViewMode}
         stats={stats}
         onResetProgress={resetProgress}
+        onOpenShare={() => setIsShareModalOpen(true)}
       />
 
       {/* Main Container */}
@@ -142,6 +149,26 @@ export function App() {
         allNodes={ROADMAP_NODES}
       />
 
+      {/* Share Modal */}
+      {isShareModalOpen && (
+        <ShareModal
+          progress={progress}
+          stats={stats}
+          onClose={() => setIsShareModalOpen(false)}
+        />
+      )}
+
+      {/* URL Hash Import Progress Modal */}
+      {incomingProgress && (
+        <ImportProgressModal
+          incomingProgress={incomingProgress}
+          localProgress={progress}
+          onApplyOverride={() => applyIncomingProgress('override')}
+          onApplyMerge={() => applyIncomingProgress('merge')}
+          onCancel={dismissIncomingProgress}
+        />
+      )}
+
       {/* Footer */}
       <footer className="bg-white border-t border-slate-200 mt-16 py-10 text-center text-xs text-slate-400 space-y-2.5">
         <div className="flex flex-wrap items-center justify-center gap-2 text-slate-700 font-semibold">
@@ -155,17 +182,12 @@ export function App() {
             <span>{ASSOCIATION_INFO.name}</span>
             <span>↗</span>
           </a>
-          <span>技术部 & 科研学术部 联合出品</span>
-          <span>·</span>
-          <span className="text-slate-500 font-normal italic">{ASSOCIATION_INFO.slogan}</span>
         </div>
-        <div className="flex items-center justify-center gap-1 text-slate-500">
-          <span>用</span>
-          <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
-          <span>与极客精神赋能初学者与科研启航 · 始于代码，终于卓越</span>
+        <div className="flex items-center justify-center gap-1 text-slate-500 font-medium">
+          <span>用最优秀的理论，做最出色的工程</span>
         </div>
         <p className="text-[11px] text-slate-400">
-          所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档 · 纯静态架构，支持 GitHub Pages 自动化免费部署
+          所有教程链接精选自 B站顶流公开课、名校开源 Lab、CCF 与官方文档，若有侵权请联系删除。本站仅为学习交流使用，禁止用于商业用途。
         </p>
       </footer>
     </div>
